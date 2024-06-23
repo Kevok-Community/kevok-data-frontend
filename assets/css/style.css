@@ -9,8 +9,8 @@ scroll-behavior: smooth;
 
 
 :root {
---primary-color: #254336;
---secondary-color: #6B8A7A;
+--primary-color: #00629A;
+--secondary-color: #030303;
 --success-color: #28a745;
 --info-color: #17a2b8;
 --warning-color: #ffc107;
@@ -21,7 +21,7 @@ scroll-behavior: smooth;
 --dark-theme: #131212;
 --light-theme: #f0f0f0;
 --dark-theme-card: #1c1c1c;
---light-theme-card: #f5f5f5;
+--light-theme-card: #e7e5e5;
 --light-theme-text: #333;
 --light-theme-text-hover: #000;
 --light-theme-hover: #cccaca;
@@ -49,6 +49,7 @@ transition: myAnimation 10s;
 body.dark-theme .navbar {
 background-color: var(--dark-theme) !important;
 color: #fff;
+border-bottom: 1px solid #333;
 }
 
 .navbar {
@@ -57,6 +58,8 @@ color: #333;
 z-index: 2;
 padding-top: 0px;
 padding-bottom: 0px;
+border-bottom: 1px solid #e9ecef;
+position: sticky;
 }
 
 .user-menu-li a {
@@ -183,21 +186,16 @@ border: none;
 outline: none;
 }
 
-.navbar-toggler-icon {
-background-color: white;
-border: 3px solid var(--primary-color);
-color: #fff !important;
-border-radius: 5px;
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 
-body.dark-theme .navbar-toggler-icon {
-background-color: var(--dark-theme);
-border: 3px solid #fff;
+.navbar-toggler i{
+font-size: 24px;
 }
 
 .navbar-collapse .navbar-nav {
 align-items: center;
-transition: all 0.3s ease;
 }
 
 
@@ -207,16 +205,17 @@ justify-content: flex-end;
 
 .navbar-collapse.show .navbar-nav {
 align-items: center;
-border: 1px solid #e9ecef;
 border-radius: 5px;
 padding: 10px;
 background-color: #fff;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-collapse.show .navbar-nav button{
+    margin-bottom: 10px;
 }
 
 body.dark-theme .navbar-collapse.show .navbar-nav {
 background-color: var(--dark-theme);
-border: 1px solid #333;
 }
 
 .navbar-collapse.show .navbar-nav .dropdown-menu {
@@ -225,7 +224,7 @@ border: 1px solid #e9ecef;
 border-radius: 5px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 padding: 0;
-margin-top: 10px;
+margin-top: 17px;
 min-width: 200px;
 position: absolute;
 /* center */
@@ -292,6 +291,11 @@ font-size: 24px;
 font-weight: 500;
 }
 
+.navbar-brand a{
+padding: 0 10px;
+
+}
+
 body.dark-theme .navbar-brand {
 color: #fff;
 }
@@ -305,10 +309,12 @@ color: var(--hover-color);
 }
 
 
+
 .navbar-brand img {
-height: 40px;
-width: 40px;
+height: 70px;
+width: 70px;
 border-radius: 50%;
+
 }
 
 .navbar-brand span {
@@ -1160,5 +1166,38 @@ background-color: var(--dark-theme);
 .post-area .post-footer .other-actions button.active{
 background-color: var(--light-theme);
 border-radius: 50%;
+}
+
+/* seçili metin css'i */
+::selection {
+background-color: var(--dark-theme);
+color: var(--light-theme-card);
+}
+
+body.dark-theme ::selection {
+background-color: var(--light-theme);
+color: var(--dark-theme-card);
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: var(--light-theme-card);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--hover-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--hover-color);
+}
+
+body.dark-theme::-webkit-scrollbar-track {
+background: var(--dark-theme-card);
 }
 

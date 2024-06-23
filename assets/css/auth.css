@@ -1,0 +1,480 @@
+:root {
+--primary-color: #254336;
+--secondary-color: #6B8A7A;
+--success-color: #28a745;
+--info-color: #17a2b8;
+--warning-color: #ffc107;
+--danger-color: #dc3545;
+--light-color: #f8f9fa;
+--dark-color: #343a40;
+--hover-color: #007bff;
+--dark-theme: #131212;
+--light-theme: #f0f0f0;
+--dark-theme-card: #1c1c1c;
+--light-theme-card: #e7e5e5;
+--light-theme-text: #333;
+--light-theme-text-hover: #000;
+--light-theme-hover: #cccaca;
+}
+
+.register-box {
+    margin-top: 100px;
+    padding: 40px;
+    background: var(--dark-theme-card);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+
+}
+
+.register-box {
+padding: 40px;
+transform: translate(-50%, -50%);
+box-sizing: border-box;
+position: relative;
+top: 50%;
+left: 50%;
+background-color: var(--light-theme-card);
+border-radius: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+padding: 20px;
+color: var(--light-theme-text);
+transition: all 0.3s ease;
+}
+
+
+body.dark-theme .register-box {
+background-color: var(--dark-theme-card);
+color: var(--light-theme-text);
+}
+
+.register-box:hover {
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .register-box:hover {
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.register-box h2 {
+margin: 0 0 50px;
+padding: 0;
+color: var(--light-theme-text);
+text-align: center;
+}
+
+body.dark-theme .register-box h2 {
+color: var(--light-color);
+}
+
+.register-box .user-box {
+position: relative;
+}
+
+.register-box .user-box input {
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: var(--light-theme-text);
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid var(--light-theme-text);
+outline: none;
+background: transparent;
+}
+
+body.dark-theme .register-box .user-box input {
+color: var(--light-color);
+border-bottom: 1px solid var(--light-color);
+}
+
+
+
+.register-box .user-box label {
+position: absolute;
+top:0;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: var(--light-theme-text);
+pointer-events: none;
+transition: .5s;
+}
+
+body.dark-theme .register-box .user-box label {
+color: var(--light-color);
+}
+
+
+
+.register-box .user-box input:focus ~ label,
+.register-box .user-box input:valid ~ label {
+top: -20px;
+left: 0;
+color: var(--hover-color);
+font-size: 12px;
+}
+
+body.dark-theme .register-box .user-box input:focus ~ label,
+body.dark-theme .register-box .user-box input:valid ~ label {
+color: var(--hover-color);
+}
+
+.register-box .remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.register-box .remember-me label {
+    color: var(--light-theme-text);
+    font-size: 16px;
+    align-items: center;
+}
+
+body.dark-theme .register-box .remember-me label {
+    color: var(--light-color);
+}
+
+.register-box .submit-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-box .submit-area button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light-color);
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    background: var(--primary-color);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+
+
+body.dark-theme .register-box .submit-area button {
+    background: var(--dark-color);
+}
+
+.register-box .submit-area button:hover {
+    background: var(--hover-color);
+}
+
+body.dark-theme .register-box .submit-area button:hover {
+    background: var(--hover-color);
+}
+
+.register-box .submit-area button:active {
+    background: var(--dark-color);
+}
+
+body.dark-theme .register-box .submit-area button:active {
+    background: var(--dark-color);
+}
+
+.register-box .forgot{
+    text-align: center;
+}
+
+.register-box .forgot a {
+    color: var(--hover-color);
+
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body.dark-theme .register-box .forgot a {
+    color: var(--hover-color);
+
+}
+
+
+.register-box .forgot a:hover {
+    color: var(--hover-color);
+}
+
+body.dark-theme .register-box .forgot a:hover {
+    color: var(--hover-color);
+}
+
+.register-box .signup {
+    text-align: center;
+}
+
+.register-box .signup a {
+    color: var(--hover-color);
+
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body.dark-theme .register-box .signup a {
+    color: var(--hover-color);
+}
+.register-box .signup p {
+    margin-top: 20px;
+    color: var(--light-theme-text);
+}
+
+body.dark-theme .register-box .signup p {
+    color: var(--light-color);
+}
+
+
+.register-box .signup a:hover {
+    color: var(--hover-color);
+}
+
+body.dark-theme .register-box .signup a:hover {
+    color: var(--hover-color);
+}
+
+.register-box .signup a:hover {
+    color: var(--hover-color);
+}
+
+.register-box .signup a:hover {
+    color: var(--hover-color);
+}
+
+
+
+
+
+
+.login-box {
+    margin-top: 100px;
+    padding: 40px;
+    background: var(--dark-theme-card);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+
+}
+
+.login-box {
+padding: 40px;
+transform: translate(-50%, -50%);
+box-sizing: border-box;
+position: relative;
+top: 50%;
+left: 50%;
+background-color: var(--light-theme-card);
+border-radius: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+padding: 20px;
+color: var(--light-theme-text);
+transition: all 0.3s ease;
+}
+
+
+body.dark-theme .login-box {
+background-color: var(--dark-theme-card);
+color: var(--light-theme-text);
+}
+
+.login-box:hover {
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .login-box:hover {
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+margin: 0 0 50px;
+padding: 0;
+color: var(--light-theme-text);
+text-align: center;
+}
+
+body.dark-theme .login-box h2 {
+color: var(--light-color);
+}
+
+.login-box .user-box {
+position: relative;
+}
+
+.login-box .user-box input {
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: var(--light-theme-text);
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid var(--light-theme-text);
+outline: none;
+background: transparent;
+}
+
+body.dark-theme .login-box .user-box input {
+color: var(--light-color);
+border-bottom: 1px solid var(--light-color);
+}
+
+
+
+.login-box .user-box label {
+position: absolute;
+top:0;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: var(--light-theme-text);
+pointer-events: none;
+transition: .5s;
+}
+
+body.dark-theme .login-box .user-box label {
+color: var(--light-color);
+}
+
+
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+top: -20px;
+left: 0;
+color: var(--hover-color);
+font-size: 12px;
+}
+
+body.dark-theme .login-box .user-box input:focus ~ label,
+body.dark-theme .login-box .user-box input:valid ~ label {
+color: var(--hover-color);
+}
+
+.login-box .remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.login-box .remember-me label {
+    color: var(--light-theme-text);
+    font-size: 16px;
+    align-items: center;
+}
+
+body.dark-theme .login-box .remember-me label {
+    color: var(--light-color);
+}
+
+.login-box .submit-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-box .submit-area button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light-color);
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    background: var(--primary-color);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+
+
+body.dark-theme .login-box .submit-area button {
+    background: var(--dark-color);
+}
+
+.login-box .submit-area button:hover {
+    background: var(--hover-color);
+}
+
+body.dark-theme .login-box .submit-area button:hover {
+    background: var(--hover-color);
+}
+
+.login-box .submit-area button:active {
+    background: var(--dark-color);
+}
+
+body.dark-theme .login-box .submit-area button:active {
+    background: var(--dark-color);
+}
+
+.login-box .forgot{
+    text-align: center;
+}
+
+.login-box .forgot a {
+    color: var(--hover-color);
+
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body.dark-theme .login-box .forgot a {
+    color: var(--hover-color);
+
+}
+
+
+.login-box .forgot a:hover {
+    color: var(--hover-color);
+}
+
+body.dark-theme .login-box .forgot a:hover {
+    color: var(--hover-color);
+}
+
+.login-box .signup {
+    text-align: center;
+}
+
+.login-box .signup a {
+    color: var(--hover-color);
+
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body.dark-theme .login-box .signup a {
+    color: var(--hover-color);
+}
+.login-box .signup p {
+    margin-top: 20px;
+    color: var(--light-theme-text);
+}
+
+body.dark-theme .login-box .signup p {
+    color: var(--light-color);
+}
+
+
+.login-box .signup a:hover {
+    color: var(--hover-color);
+}
+
+body.dark-theme .login-box .signup a:hover {
+    color: var(--hover-color);
+}
+
+.login-box .signup a:hover {
+    color: var(--hover-color);
+}
+
+.login-box .signup a:hover {
+    color: var(--hover-color);
+}
+

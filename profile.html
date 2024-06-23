@@ -18,8 +18,7 @@
 </head>
 
 <body class="">
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg  p-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><span class="ms-0 ">kevok</span> <span
                     class="ms-0">fehreng.</span></a>
@@ -110,7 +109,7 @@
         </div>
         <div class="container-body ">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <div class="profile-card card card-body">
                         <div class="text-end">
                             <div class="dropdown">
@@ -151,609 +150,654 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <div class="card card-body status-area">
-                        <ol class="list-group list-group-numbered" id="pills-tab" role="tablist"s>
-                            <li class="list-group-item d-flex justify-content-between align-items-start active"
-                                role="presentation" id="pills-wrong-spell-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-wrong-spell" type="button" role="tab"
-                                aria-controls="pills-wrong-spell" aria-selected="true">
-                                <div class="ms-2 me-auto " s>
-                                    <div class="fw-bold">Wrong spelling</div>
-                                    Kurdish misspellings
+                <div class="mod-area">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-body status-area">
+                                <ol class="list-group list-group-numbered" id="pills-tab" role="tablist">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start active"
+                                        role="presentation" id="pills-wrong-spell-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-wrong-spell" type="button" role="tab"
+                                        aria-controls="pills-wrong-spell" aria-selected="true">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Wrong spelling</div>
+                                            Kurdish misspellings
+                                        </div>
+                                        <span class="badge text-bg-primary rounded-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start"
+                                        role="presentation">
+                                        <div class="ms-2 me-auto" id="pills-translation-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-translation" type="button" role="tab"
+                                            aria-controls="pills-translation" aria-selected="false">
+                                            <div class="fw-bold">Incomplete translation</div>
+                                            Incorrect or incomplete translation in English
+                                        </div>
+                                        <span class="badge text-bg-primary rounded-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start"
+                                        role="presentation">
+                                        <div class="ms-2 me-auto" id="pills-tags-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-tags" type="button" role="tab"
+                                            aria-controls="pills-tags" aria-selected="false">
+                                            <div class="fw-bold">Incorrect Tags</div>
+                                            Tags in Kurdish or English with errors
+                                        </div>
+                                        <span class="badge text-bg-primary rounded-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start"
+                                        role="presentation">
+                                        <div class="ms-2 me-auto" id="pills-reported-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-reported" type="button" role="tab"
+                                            aria-controls="pills-reported" aria-selected="false">
+                                            <div class="fw-bold">Other reported</div>
+                                            Spam, misleading, harmful, etc.
+                                        </div>
+                                        <span class="badge text-bg-primary rounded-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start"
+                                        role="presentation">
+                                        <div class="ms-2 me-auto" id="pills-completed-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-completed" type="button" role="tab"
+                                            aria-controls="pills-completed" aria-selected="false">
+                                            <div class="fw-bold">Completed</div>
+                                            Full texts.
+                                        </div>
+                                        <span class="badge text-bg-primary rounded-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start"
+                                        role="presentation">
+                                        <div class="ms-2 me-auto" id="pills-uncontrolled-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-uncontrolled" type="button" role="tab"
+                                            aria-controls="pills-uncontrolled" aria-selected="false">
+                                            <div class="fw-bold">Uncontrolled</div>
+                                            Waiting to be published.
+                                        </div>
+                                        <span class="badge text-bg-primary rounded-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start"
+                                        role="presentation">
+                                        <div class="ms-2 me-auto" id="pills-not-voted-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-not-voted" type="button" role="tab"
+                                            aria-controls="pills-not-voted" aria-selected="false">
+                                            <div class="fw-bold">Not voted</div>
+                                            Those that have been published but not yet voted on.
+                                        </div>
+                                        <span class="badge text-bg-primary rounded-pill">14</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-wrong-spell" role="tabpanel"
+                                    aria-labelledby="pills-wrong-spell-tab" tabindex="0">
+                                    <div class="card card-body wrong-spell-area">
+                                        <form>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Kurdish
+                                                word</label>
+                                            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Kurdish word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae voluptate optio ab consequuntur, nam adipisci ut asperiores provident incidunt et architecto inventore illum cupiditate beatae, facilis numquam quis neque.</textarea>
+                                            <label for="exampleFormControlTextarea1" class="form-label">English
+                                                word</label>
+                                            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Kurdish word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae voluptate optio ab consequuntur, nam adipisci ut asperiores provident incidunt et architecto inventore illum cupiditate beatae, facilis numquam quis neque.</textarea>
+                                            <div class="input-group mb-3">
+                                                <select type="text" class="form-control">
+                                                    <option value="1">Completed</option>
+                                                    <option value="2">English</option>
+                                                </select>
+                                                <button class="btn btn-outline-secondary" type="button"
+                                                    id="button-addon2">Send
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <span class="badge text-bg-primary rounded-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start"
-                                role="presentation">
-                                <div class="ms-2 me-auto" id="pills-translation-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-translation" type="button" role="tab"
-                                    aria-controls="pills-translation" aria-selected="false">
-                                    <div class="fw-bold">Incomplete translation</div>
-                                    Incorrect or incomplete translation in English
+                                <div class="tab-pane fade" id="pills-translation" role="tabpanel"
+                                    aria-labelledby="pills-translation-tab" tabindex="0">
+                                    <div class="card card-body translation-area">
+                                        <form>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Kurdish
+                                                word</label>
+                                            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Kurdish word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae voluptate optio ab consequuntur, nam adipisci ut asperiores provident incidunt et architecto inventore illum cupiditate beatae, facilis numquam quis neque.</textarea>
+                                            <label for="exampleFormControlTextarea1" class="form-label">English
+                                                word</label>
+                                            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Kurdish word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae voluptate optio ab consequuntur, nam adipisci ut asperiores provident incidunt et architecto inventore illum cupiditate beatae, facilis numquam quis neque.</textarea>
+                                            <div class="input-group mb-3">
+                                                <select type="text" class="form-control">
+                                                    <option value="1">Completed</option>
+                                                    <option value="2">English</option>
+                                                </select>
+                                                <button class="btn btn-outline-secondary" type="button"
+                                                    id="button-addon2">Send
+                                                </button>
+                                            </div>
+
+                                        </form>
+                                    </div>
                                 </div>
-                                <span class="badge text-bg-primary rounded-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start"
-                                role="presentation">
-                                <div class="ms-2 me-auto" id="pills-tags-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-tags" type="button" role="tab"
-                                    aria-controls="pills-tags" aria-selected="false">
-                                    <div class="fw-bold">Incorrect Tags</div>
-                                    Tags in Kurdish or English with errors
+                                <div class="tab-pane fade" id="pills-tags" role="tabpanel"
+                                    aria-labelledby="pills-tags-tab" tabindex="0">
+                                    <div class="card card-body tags-area">
+                                        <div class="words row">
+                                            <div class="kurdish">
+                                                <h5>
+                                                    Kurdish word
+                                                </h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                                                    recusandae dolores aliquid similique laudantium itaque, praesentium
+                                                    molestiae soluta placeat nobis debitis, in cumque! A aut vel
+                                                    repellat
+                                                    consequatur. Minus, quo.
+                                                </p>
+                                            </div>
+                                            <div class="english">
+                                                <h5>
+                                                    English word
+                                                </h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                                                    recusandae dolores aliquid similique laudantium itaque, praesentium
+                                                    molestiae soluta placeat nobis debitis, in cumque! A aut vel
+                                                    repellat
+                                                    consequatur. Minus, quo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tags">
+                                            <form>
+                                                <div class="kurdish">
+                                                    <h5>
+                                                        Kurdish Tags
+                                                    </h5>
+                                                    <select id="kurdish-tags" class="mt-3" multiple></select>
+                                                </div>
+                                                <div class="english">
+                                                    <h5>
+                                                        English Tags
+                                                    </h5>
+                                                    <select id="english-tags" class="mt-3" multiple></select>
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <select type="text" class="form-control">
+                                                        <option value="1">Completed</option>
+                                                        <option value="2">English</option>
+                                                    </select>
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        id="button-addon2">Send
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="badge text-bg-primary rounded-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start"
-                                role="presentation">
-                                <div class="ms-2 me-auto" id="pills-reported-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-reported" type="button" role="tab"
-                                    aria-controls="pills-reported" aria-selected="false">
-                                    <div class="fw-bold">Other reported</div>
-                                    Spam, misleading, harmful, etc.
+                                <div class="tab-pane fade" id="pills-reported" role="tabpanel"
+                                    aria-labelledby="pills-reported-tab" tabindex="0">
+                                    <div class="post-area">
+                                        <div class="post">
+                                            <div class="post-user">
+                                                <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                <div class="user-info">
+                                                    <h6>John Doe</h6>
+                                                    <p>2 hours ago</p>
+                                                </div>
+                                                <div class="dropdown-area">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary" type="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                                            <li><a class="dropdown-item active"
+                                                                    href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another
+                                                                    action</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Something else
+                                                                    here</a></li>
+                                                            <li>
+                                                                <hr class="dropdown-divider">
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Separated
+                                                                    link</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-content original-text">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                                                    cum iste
+                                                    minima
+                                                    incidunt maiores voluptatum dolor sapiente voluptas saepe quod non
+                                                    nostrum
+                                                    nemo
+                                                    possimus aperiam quam, dignissimos, consectetur voluptatibus vel.
+                                                </p>
+                                                <div class="post-tags">
+                                                    <div class="original-tags">
+                                                        <span class="tag">tag1</span>
+                                                        <span class="tag">tag2</span>
+                                                        <span class="tag">tag3</span>
+                                                    </div>
+                                                    <div class="tabs-area">
+                                                        <p class="mt-2">
+                                                            <a class="btn" data-bs-toggle="collapse"
+                                                                href="#english-area" role="button"
+                                                                aria-expanded="false" aria-controls="english-area">
+                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse" id="english-area">
+                                                    <div class="card card-body translate-text">
+                                                        <p>
+                                                            Some placeholder content for the collapse component. This
+                                                            panel is
+                                                            hidden by
+                                                            default but revealed when the user activates the relevant
+                                                            trigger.
+                                                        </p>
+                                                        <div class="card-tags translate-tags">
+                                                            <div>
+                                                                <span class="tag">tag1</span>
+                                                                <span class="tag">tag2</span>
+                                                                <span class="tag">tag3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+                                                <div class="actions">
+                                                    <button class="btn thumbs-up">
+                                                        <i class="fas fa-thumbs-up"></i>
+                                                    </button>
+                                                    <button class="btn thumbs-down">
+                                                        <i class="fas fa-thumbs-down"></i>
+                                                    </button>
+
+                                                </div>
+                                                <div class="other-actions">
+                                                    <button class="btn share">
+                                                        <i class="fas fa-share"></i>
+                                                    </button>
+                                                    <button class="btn bookmark">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="report-details">
+                                                <p>
+                                                    <span class="badge bg-danger">Reported</span>
+                                                    <span class="badge bg-primary">Wrong spelling</span>
+                                                    <span class="badge bg-primary">Incomplete translation</span>
+                                                    <span class="badge bg-primary">Incorrect Tags</span>
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    eveniet
+                                                    consequuntur dolorum possimus, expedita perspiciatis animi ipsum
+                                                    maxime
+                                                    deleniti, quam sint deserunt. Quas dignissimos sit ea aspernatur
+                                                    deserunt
+                                                    dolores dolor.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="badge text-bg-primary rounded-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start"
-                                role="presentation">
-                                <div class="ms-2 me-auto" id="pills-completed-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-completed" type="button" role="tab"
-                                    aria-controls="pills-completed" aria-selected="false">
-                                    <div class="fw-bold">Completed</div>
-                                    Full texts.
+                                <div class="tab-pane fade" id="pills-completed" role="tabpanel"
+                                    aria-labelledby="pills-completed-tab" tabindex="0">
+                                    <div class="post-area">
+                                        <div class="post">
+                                            <div class="post-user">
+                                                <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                <div class="user-info">
+                                                    <h6>John Doe</h6>
+                                                    <p>2 hours ago</p>
+                                                </div>
+                                                <div class="dropdown-area">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary" type="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                                            <li><a class="dropdown-item active"
+                                                                    href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another
+                                                                    action</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Something else
+                                                                    here</a></li>
+                                                            <li>
+                                                                <hr class="dropdown-divider">
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Separated
+                                                                    link</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-content original-text">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                                                    cum iste
+                                                    minima
+                                                    incidunt maiores voluptatum dolor sapiente voluptas saepe quod non
+                                                    nostrum
+                                                    nemo
+                                                    possimus aperiam quam, dignissimos, consectetur voluptatibus vel.
+                                                </p>
+                                                <div class="post-tags">
+                                                    <div class="original-tags">
+                                                        <span class="tag">tag1</span>
+                                                        <span class="tag">tag2</span>
+                                                        <span class="tag">tag3</span>
+                                                    </div>
+                                                    <div class="tabs-area">
+                                                        <p class="mt-2">
+                                                            <a class="btn" data-bs-toggle="collapse"
+                                                                href="#english-area" role="button"
+                                                                aria-expanded="false" aria-controls="english-area">
+                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse" id="english-area">
+                                                    <div class="card card-body translate-text">
+                                                        <p>
+                                                            Some placeholder content for the collapse component. This
+                                                            panel is
+                                                            hidden by
+                                                            default but revealed when the user activates the relevant
+                                                            trigger.
+                                                        </p>
+                                                        <div class="card-tags translate-tags">
+                                                            <div>
+                                                                <span class="tag">tag1</span>
+                                                                <span class="tag">tag2</span>
+                                                                <span class="tag">tag3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+                                                <div class="actions">
+                                                    <button class="btn thumbs-up">
+                                                        <i class="fas fa-thumbs-up"></i>
+                                                    </button>
+                                                    <button class="btn thumbs-down">
+                                                        <i class="fas fa-thumbs-down"></i>
+                                                    </button>
+
+                                                </div>
+                                                <div class="other-actions">
+                                                    <button class="btn share">
+                                                        <i class="fas fa-share"></i>
+                                                    </button>
+                                                    <button class="btn bookmark">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="badge text-bg-primary rounded-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start"
-                                role="presentation">
-                                <div class="ms-2 me-auto" id="pills-uncontrolled-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-uncontrolled" type="button" role="tab"
-                                    aria-controls="pills-uncontrolled" aria-selected="false">
-                                    <div class="fw-bold">Uncontrolled</div>
-                                    Waiting to be published.
+                                <div class="tab-pane fade" id="pills-uncontrolled" role="tabpanel"
+                                    aria-labelledby="pills-uncontrolled-tab" tabindex="0">
+                                    <div class="post-area">
+                                        <div class="post">
+                                            <div class="post-user">
+                                                <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                <div class="user-info">
+                                                    <h6>John Doe</h6>
+                                                    <p>2 hours ago</p>
+                                                </div>
+                                                <div class="dropdown-area">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary" type="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                                            <li><a class="dropdown-item active"
+                                                                    href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another
+                                                                    action</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Something else
+                                                                    here</a></li>
+                                                            <li>
+                                                                <hr class="dropdown-divider">
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Separated
+                                                                    link</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-content original-text">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                                                    cum iste
+                                                    minima
+                                                    incidunt maiores voluptatum dolor sapiente voluptas saepe quod non
+                                                    nostrum
+                                                    nemo
+                                                    possimus aperiam quam, dignissimos, consectetur voluptatibus vel.
+                                                </p>
+                                                <div class="post-tags">
+                                                    <div class="original-tags">
+                                                        <span class="tag">tag1</span>
+                                                        <span class="tag">tag2</span>
+                                                        <span class="tag">tag3</span>
+                                                    </div>
+                                                    <div class="tabs-area">
+                                                        <p class="mt-2">
+                                                            <a class="btn" data-bs-toggle="collapse"
+                                                                href="#english-area" role="button"
+                                                                aria-expanded="false" aria-controls="english-area">
+                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse" id="english-area">
+                                                    <div class="card card-body translate-text">
+                                                        <p>
+                                                            Some placeholder content for the collapse component. This
+                                                            panel is
+                                                            hidden by
+                                                            default but revealed when the user activates the relevant
+                                                            trigger.
+                                                        </p>
+                                                        <div class="card-tags translate-tags">
+                                                            <div>
+                                                                <span class="tag">tag1</span>
+                                                                <span class="tag">tag2</span>
+                                                                <span class="tag">tag3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+                                                <div class="actions">
+                                                    <button class="btn thumbs-up">
+                                                        <i class="fas fa-thumbs-up"></i>
+                                                    </button>
+                                                    <button class="btn thumbs-down">
+                                                        <i class="fas fa-thumbs-down"></i>
+                                                    </button>
+
+                                                </div>
+                                                <div class="other-actions">
+                                                    <button class="btn share">
+                                                        <i class="fas fa-share"></i>
+                                                    </button>
+                                                    <button class="btn bookmark">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="report-details">
+                                                <p>
+                                                    <span class="badge bg-primary">Reported</span>
+                                                    <span class="badge bg-primary">Wrong spelling</span>
+                                                    <span class="badge bg-primary">Incomplete translation</span>
+                                                    <span class="badge bg-primary">Incorrect Tags</span>
+                                                    <span class="badge bg-primary">Other reported</span>
+                                                    <span class="badge bg-danger">Uncontrolled</span>
+                                                    <span class="badge bg-primary">Completed</span>
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    eveniet
+                                                    consequuntur dolorum possimus, expedita perspiciatis animi ipsum
+                                                    maxime
+                                                    deleniti, quam sint deserunt. Quas dignissimos sit ea aspernatur
+                                                    deserunt
+                                                    dolores dolor.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="badge text-bg-primary rounded-pill">14</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start"
-                                role="presentation">
-                                <div class="ms-2 me-auto" id="pills-not-voted-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-not-voted" type="button" role="tab"
-                                    aria-controls="pills-not-voted" aria-selected="false">
-                                    <div class="fw-bold">Not voted</div>
-                                    Those that have been published but not yet voted on.
+                                <div class="tab-pane fade" id="pills-not-voted" role="tabpanel"
+                                    aria-labelledby="pills-not-voted-tab" tabindex="0">
+                                    <div class="post-area">
+                                        <div class="post">
+                                            <div class="post-user">
+                                                <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
+                                                <div class="user-info">
+                                                    <h6>John Doe</h6>
+                                                    <p>2 hours ago</p>
+                                                </div>
+                                                <div class="dropdown-area">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary" type="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                                            <li><a class="dropdown-item active"
+                                                                    href="#">Action</a></li>
+                                                            <li><a class="dropdown-item" href="#">Another
+                                                                    action</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Something else
+                                                                    here</a></li>
+                                                            <li>
+                                                                <hr class="dropdown-divider">
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">Separated
+                                                                    link</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-content original-text">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                                                    cum iste
+                                                    minima
+                                                    incidunt maiores voluptatum dolor sapiente voluptas saepe quod non
+                                                    nostrum
+                                                    nemo
+                                                    possimus aperiam quam, dignissimos, consectetur voluptatibus vel.
+                                                </p>
+                                                <div class="post-tags">
+                                                    <div class="original-tags">
+                                                        <span class="tag">tag1</span>
+                                                        <span class="tag">tag2</span>
+                                                        <span class="tag">tag3</span>
+                                                    </div>
+                                                    <div class="tabs-area">
+                                                        <p class="mt-2">
+                                                            <a class="btn" data-bs-toggle="collapse"
+                                                                href="#english-area" role="button"
+                                                                aria-expanded="false" aria-controls="english-area">
+                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse" id="english-area">
+                                                    <div class="card card-body translate-text">
+                                                        <p>
+                                                            Some placeholder content for the collapse component. This
+                                                            panel is
+                                                            hidden by
+                                                            default but revealed when the user activates the relevant
+                                                            trigger.
+                                                        </p>
+                                                        <div class="card-tags translate-tags">
+                                                            <div>
+                                                                <span class="tag">tag1</span>
+                                                                <span class="tag">tag2</span>
+                                                                <span class="tag">tag3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+                                                <div class="actions">
+                                                    <button class="btn thumbs-up">
+                                                        <i class="fas fa-thumbs-up"></i>
+                                                    </button>
+                                                    <button class="btn thumbs-down">
+                                                        <i class="fas fa-thumbs-down"></i>
+                                                    </button>
+
+                                                </div>
+                                                <div class="other-actions">
+                                                    <button class="btn share">
+                                                        <i class="fas fa-share"></i>
+                                                    </button>
+                                                    <button class="btn bookmark">
+                                                        <i class="fas fa-bookmark"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="report-details">
+                                                <p>
+                                                    <span class="badge bg-primary">Reported</span>
+                                                    <span class="badge bg-primary">Wrong spelling</span>
+                                                    <span class="badge bg-primary">Incomplete translation</span>
+                                                    <span class="badge bg-primary">Incorrect Tags</span>
+                                                    <span class="badge bg-primary">Other reported</span>
+                                                    <span class="badge bg-primary">Uncontrolled</span>
+                                                    <span class="badge bg-primary">Completed</span>
+                                                    <span class="badge bg-danger">Not voted</span>
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    eveniet
+                                                    consequuntur dolorum possimus, expedita perspiciatis animi ipsum
+                                                    maxime
+                                                    deleniti, quam sint deserunt. Quas dignissimos sit ea aspernatur
+                                                    deserunt
+                                                    dolores dolor.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="badge text-bg-primary rounded-pill">14</span>
-                            </li>
-                        </ol>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-11 ">
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-wrong-spell" role="tabpanel"
-                            aria-labelledby="pills-wrong-spell-tab" tabindex="0">
-                            <div class="card card-body wrong-spell-area">
-                                <form>
-                                    <label for="exampleFormControlTextarea1" class="form-label">Kurdish word</label>
-                                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Kurdish word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae voluptate optio ab consequuntur, nam adipisci ut asperiores provident incidunt et architecto inventore illum cupiditate beatae, facilis numquam quis neque.</textarea>
-                                    <label for="exampleFormControlTextarea1" class="form-label">English word</label>
-                                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Kurdish word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae voluptate optio ab consequuntur, nam adipisci ut asperiores provident incidunt et architecto inventore illum cupiditate beatae, facilis numquam quis neque.</textarea>
-                                    <div class="input-group mb-3">
-                                        <select type="text" class="form-control">
-                                            <option value="1">Completed</option>
-                                            <option value="2">English</option>
-                                        </select>
-                                        <button class="btn btn-outline-secondary" type="button"
-                                            id="button-addon2">Send
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-translation" role="tabpanel"
-                            aria-labelledby="pills-translation-tab" tabindex="0">
-                            <div class="card card-body translation-area">
-                                <form>
-                                    <label for="exampleFormControlTextarea1" class="form-label">Kurdish word</label>
-                                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Kurdish word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae voluptate optio ab consequuntur, nam adipisci ut asperiores provident incidunt et architecto inventore illum cupiditate beatae, facilis numquam quis neque.</textarea>
-                                    <label for="exampleFormControlTextarea1" class="form-label">English word</label>
-                                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Kurdish word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur molestiae voluptate optio ab consequuntur, nam adipisci ut asperiores provident incidunt et architecto inventore illum cupiditate beatae, facilis numquam quis neque.</textarea>
-                                    <div class="input-group mb-3">
-                                        <select type="text" class="form-control">
-                                            <option value="1">Completed</option>
-                                            <option value="2">English</option>
-                                        </select>
-                                        <button class="btn btn-outline-secondary" type="button"
-                                            id="button-addon2">Send
-                                        </button>
-                                    </div>
 
-                                </form>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-tags" role="tabpanel" aria-labelledby="pills-tags-tab"
-                            tabindex="0">
-                            <div class="card card-body tags-area">
-                                <div class="words row">
-                                    <div class="kurdish">
-                                        <h5>
-                                            Kurdish word
-                                        </h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-                                            recusandae dolores aliquid similique laudantium itaque, praesentium
-                                            molestiae soluta placeat nobis debitis, in cumque! A aut vel repellat
-                                            consequatur. Minus, quo.
-                                        </p>
-                                    </div>
-                                    <div class="english">
-                                        <h5>
-                                            English word
-                                        </h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-                                            recusandae dolores aliquid similique laudantium itaque, praesentium
-                                            molestiae soluta placeat nobis debitis, in cumque! A aut vel repellat
-                                            consequatur. Minus, quo.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="tags">
-                                    <form>
-                                        <div class="kurdish">
-                                            <h5>
-                                                Kurdish Tags
-                                            </h5>
-                                            <select id="kurdish-tags" class="mt-3" multiple></select>
-                                        </div>
-                                        <div class="english">
-                                            <h5>
-                                                English Tags
-                                            </h5>
-                                            <select id="english-tags" class="mt-3" multiple></select>
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <select type="text" class="form-control">
-                                                <option value="1">Completed</option>
-                                                <option value="2">English</option>
-                                            </select>
-                                            <button class="btn btn-outline-secondary" type="button"
-                                                id="button-addon2">Send
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-reported" role="tabpanel"
-                            aria-labelledby="pills-reported-tab" tabindex="0">
-                            <div class="post-area">
-                                <div class="post">
-                                    <div class="post-user">
-                                        <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
-                                        <div class="user-info">
-                                            <h6>John Doe</h6>
-                                            <p>2 hours ago</p>
-                                        </div>
-                                        <div class="dropdown-area">
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-dark">
-                                                    <li><a class="dropdown-item active" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Something else
-                                                            here</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Separated link</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-content original-text">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum iste
-                                            minima
-                                            incidunt maiores voluptatum dolor sapiente voluptas saepe quod non nostrum
-                                            nemo
-                                            possimus aperiam quam, dignissimos, consectetur voluptatibus vel.
-                                        </p>
-                                        <div class="post-tags">
-                                            <div class="original-tags">
-                                                <span class="tag">tag1</span>
-                                                <span class="tag">tag2</span>
-                                                <span class="tag">tag3</span>
-                                            </div>
-                                            <div class="tabs-area">
-                                                <p class="mt-2">
-                                                    <a class="btn" data-bs-toggle="collapse" href="#english-area"
-                                                        role="button" aria-expanded="false"
-                                                        aria-controls="english-area">
-                                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="english-area">
-                                            <div class="card card-body translate-text">
-                                                <p>
-                                                    Some placeholder content for the collapse component. This panel is
-                                                    hidden by
-                                                    default but revealed when the user activates the relevant trigger.
-                                                </p>
-                                                <div class="card-tags translate-tags">
-                                                    <div>
-                                                        <span class="tag">tag1</span>
-                                                        <span class="tag">tag2</span>
-                                                        <span class="tag">tag3</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-footer">
-                                        <div class="actions">
-                                            <button class="btn thumbs-up">
-                                                <i class="fas fa-thumbs-up"></i>
-                                            </button>
-                                            <button class="btn thumbs-down">
-                                                <i class="fas fa-thumbs-down"></i>
-                                            </button>
-
-                                        </div>
-                                        <div class="other-actions">
-                                            <button class="btn share">
-                                                <i class="fas fa-share"></i>
-                                            </button>
-                                            <button class="btn bookmark">
-                                                <i class="fas fa-bookmark"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="report-details">
-                                        <p>
-                                            <span class="badge bg-danger">Reported</span>
-                                            <span class="badge bg-primary">Wrong spelling</span>
-                                            <span class="badge bg-primary">Incomplete translation</span>
-                                            <span class="badge bg-primary">Incorrect Tags</span>
-                                        </p>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet
-                                            consequuntur dolorum possimus, expedita perspiciatis animi ipsum maxime
-                                            deleniti, quam sint deserunt. Quas dignissimos sit ea aspernatur deserunt
-                                            dolores dolor.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-completed" role="tabpanel"
-                            aria-labelledby="pills-completed-tab" tabindex="0">
-                            <div class="post-area">
-                                <div class="post">
-                                    <div class="post-user">
-                                        <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
-                                        <div class="user-info">
-                                            <h6>John Doe</h6>
-                                            <p>2 hours ago</p>
-                                        </div>
-                                        <div class="dropdown-area">
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-dark">
-                                                    <li><a class="dropdown-item active" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Something else
-                                                            here</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Separated link</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-content original-text">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum iste
-                                            minima
-                                            incidunt maiores voluptatum dolor sapiente voluptas saepe quod non nostrum
-                                            nemo
-                                            possimus aperiam quam, dignissimos, consectetur voluptatibus vel.
-                                        </p>
-                                        <div class="post-tags">
-                                            <div class="original-tags">
-                                                <span class="tag">tag1</span>
-                                                <span class="tag">tag2</span>
-                                                <span class="tag">tag3</span>
-                                            </div>
-                                            <div class="tabs-area">
-                                                <p class="mt-2">
-                                                    <a class="btn" data-bs-toggle="collapse" href="#english-area"
-                                                        role="button" aria-expanded="false"
-                                                        aria-controls="english-area">
-                                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="english-area">
-                                            <div class="card card-body translate-text">
-                                                <p>
-                                                    Some placeholder content for the collapse component. This panel is
-                                                    hidden by
-                                                    default but revealed when the user activates the relevant trigger.
-                                                </p>
-                                                <div class="card-tags translate-tags">
-                                                    <div>
-                                                        <span class="tag">tag1</span>
-                                                        <span class="tag">tag2</span>
-                                                        <span class="tag">tag3</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-footer">
-                                        <div class="actions">
-                                            <button class="btn thumbs-up">
-                                                <i class="fas fa-thumbs-up"></i>
-                                            </button>
-                                            <button class="btn thumbs-down">
-                                                <i class="fas fa-thumbs-down"></i>
-                                            </button>
-
-                                        </div>
-                                        <div class="other-actions">
-                                            <button class="btn share">
-                                                <i class="fas fa-share"></i>
-                                            </button>
-                                            <button class="btn bookmark">
-                                                <i class="fas fa-bookmark"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-uncontrolled" role="tabpanel"
-                            aria-labelledby="pills-uncontrolled-tab" tabindex="0">
-                            <div class="post-area">
-                                <div class="post">
-                                    <div class="post-user">
-                                        <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
-                                        <div class="user-info">
-                                            <h6>John Doe</h6>
-                                            <p>2 hours ago</p>
-                                        </div>
-                                        <div class="dropdown-area">
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-dark">
-                                                    <li><a class="dropdown-item active" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Something else
-                                                            here</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Separated link</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-content original-text">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum iste
-                                            minima
-                                            incidunt maiores voluptatum dolor sapiente voluptas saepe quod non nostrum
-                                            nemo
-                                            possimus aperiam quam, dignissimos, consectetur voluptatibus vel.
-                                        </p>
-                                        <div class="post-tags">
-                                            <div class="original-tags">
-                                                <span class="tag">tag1</span>
-                                                <span class="tag">tag2</span>
-                                                <span class="tag">tag3</span>
-                                            </div>
-                                            <div class="tabs-area">
-                                                <p class="mt-2">
-                                                    <a class="btn" data-bs-toggle="collapse" href="#english-area"
-                                                        role="button" aria-expanded="false"
-                                                        aria-controls="english-area">
-                                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="english-area">
-                                            <div class="card card-body translate-text">
-                                                <p>
-                                                    Some placeholder content for the collapse component. This panel is
-                                                    hidden by
-                                                    default but revealed when the user activates the relevant trigger.
-                                                </p>
-                                                <div class="card-tags translate-tags">
-                                                    <div>
-                                                        <span class="tag">tag1</span>
-                                                        <span class="tag">tag2</span>
-                                                        <span class="tag">tag3</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-footer">
-                                        <div class="actions">
-                                            <button class="btn thumbs-up">
-                                                <i class="fas fa-thumbs-up"></i>
-                                            </button>
-                                            <button class="btn thumbs-down">
-                                                <i class="fas fa-thumbs-down"></i>
-                                            </button>
-
-                                        </div>
-                                        <div class="other-actions">
-                                            <button class="btn share">
-                                                <i class="fas fa-share"></i>
-                                            </button>
-                                            <button class="btn bookmark">
-                                                <i class="fas fa-bookmark"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="report-details">
-                                        <p>
-                                            <span class="badge bg-primary">Reported</span>
-                                            <span class="badge bg-primary">Wrong spelling</span>
-                                            <span class="badge bg-primary">Incomplete translation</span>
-                                            <span class="badge bg-primary">Incorrect Tags</span>
-                                            <span class="badge bg-primary">Other reported</span>
-                                            <span class="badge bg-danger">Uncontrolled</span>
-                                            <span class="badge bg-primary">Completed</span>
-                                        </p>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet
-                                            consequuntur dolorum possimus, expedita perspiciatis animi ipsum maxime
-                                            deleniti, quam sint deserunt. Quas dignissimos sit ea aspernatur deserunt
-                                            dolores dolor.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-not-voted" role="tabpanel"
-                            aria-labelledby="pills-not-voted-tab" tabindex="0">
-                            <div class="post-area">
-                                <div class="post">
-                                    <div class="post-user">
-                                        <img src="/assets/img/avatar.jpg" alt="avatar" class="avatar">
-                                        <div class="user-info">
-                                            <h6>John Doe</h6>
-                                            <p>2 hours ago</p>
-                                        </div>
-                                        <div class="dropdown-area">
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-dark">
-                                                    <li><a class="dropdown-item active" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Something else
-                                                            here</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Separated link</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-content original-text">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum iste
-                                            minima
-                                            incidunt maiores voluptatum dolor sapiente voluptas saepe quod non nostrum
-                                            nemo
-                                            possimus aperiam quam, dignissimos, consectetur voluptatibus vel.
-                                        </p>
-                                        <div class="post-tags">
-                                            <div class="original-tags">
-                                                <span class="tag">tag1</span>
-                                                <span class="tag">tag2</span>
-                                                <span class="tag">tag3</span>
-                                            </div>
-                                            <div class="tabs-area">
-                                                <p class="mt-2">
-                                                    <a class="btn" data-bs-toggle="collapse" href="#english-area"
-                                                        role="button" aria-expanded="false"
-                                                        aria-controls="english-area">
-                                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="english-area">
-                                            <div class="card card-body translate-text">
-                                                <p>
-                                                    Some placeholder content for the collapse component. This panel is
-                                                    hidden by
-                                                    default but revealed when the user activates the relevant trigger.
-                                                </p>
-                                                <div class="card-tags translate-tags">
-                                                    <div>
-                                                        <span class="tag">tag1</span>
-                                                        <span class="tag">tag2</span>
-                                                        <span class="tag">tag3</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-footer">
-                                        <div class="actions">
-                                            <button class="btn thumbs-up">
-                                                <i class="fas fa-thumbs-up"></i>
-                                            </button>
-                                            <button class="btn thumbs-down">
-                                                <i class="fas fa-thumbs-down"></i>
-                                            </button>
-
-                                        </div>
-                                        <div class="other-actions">
-                                            <button class="btn share">
-                                                <i class="fas fa-share"></i>
-                                            </button>
-                                            <button class="btn bookmark">
-                                                <i class="fas fa-bookmark"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="report-details">
-                                        <p>
-                                            <span class="badge bg-primary">Reported</span>
-                                            <span class="badge bg-primary">Wrong spelling</span>
-                                            <span class="badge bg-primary">Incomplete translation</span>
-                                            <span class="badge bg-primary">Incorrect Tags</span>
-                                            <span class="badge bg-primary">Other reported</span>
-                                            <span class="badge bg-primary">Uncontrolled</span>
-                                            <span class="badge bg-primary">Completed</span>
-                                            <span class="badge bg-danger">Not voted</span>
-                                        </p>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet
-                                            consequuntur dolorum possimus, expedita perspiciatis animi ipsum maxime
-                                            deleniti, quam sint deserunt. Quas dignissimos sit ea aspernatur deserunt
-                                            dolores dolor.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-md-12">
-                   <div class="mt-5 " id='myDiv'>Plotly chart will be drawn inside this DIV </div>
-                </div> -->
             </div>
         </div>
     </div>
